@@ -82,6 +82,25 @@
     padding-right: 70px;
 }
 
+li{
+    list-style: none
+}
+
+ol{
+    padding-left: 5px;
+    -webkit-margin-before: 5px;
+    -webkit-margin-after: 5px
+}
+
+.wrapper-masthead {
+    margin-bottom: 20px;
+}
+
+h3{
+    -webkit-margin-before: 5px;
+    -webkit-margin-after: 5px
+}
+
 /*.posts{
     max-width: calc(100% - 498px);
     order: 2;
