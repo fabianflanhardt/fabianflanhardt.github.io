@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    {% include head.html %}
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
     {% include meta.html %}
@@ -10,7 +11,7 @@
     <![endif]-->
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/public/custom.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/custom.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
@@ -35,9 +36,14 @@
       </div>
     </div>
 
-    <div id="main" role="main" class="container">
-      {% include sidebar.html %}
-      {{ content }}
+    
+
+    <div id="main" role="main" class="maincontainer">
+      {% include sidebar-left.html %}
+      <div id="maincontent" class="contentcontainer">
+        {{ content }}
+      </div>
+      {% include sidebar-right.html %}
     </div>
 
     <div class="wrapper-footer">

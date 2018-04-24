@@ -1,0 +1,91 @@
+---
+---
+
+
+/* The sidebar menu */
+.sidebar-right {
+    height: relative; /* Full-height: remove this if you want "auto" height */
+    max-width: 230px; /* Set the width of the sidebar */
+    z-index: 1; /* Stay on top */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    float: right;
+    display: block;
+    order: 3;
+    flex-basis: 230px;
+    top: 150px
+}
+
+/* The sidebar menu */
+.sidebar-left {
+    height: relative; /* Full-height: remove this if you want "auto" height */
+    max-width: 220px; /* Set the width of the sidebar */
+    z-index: 1; /* Stay on top */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    display: block;
+    order: 1;
+    flex-basis: 220px;
+    top: 150px
+}
+
+.contentcontainer
+{
+    max-width: calc(100% - 498px);
+    order: 2;
+    flex-basis: calc(100% - 498px);
+    margin-left: 24px;
+    margin-right: 24px
+}
+
+.sidebar-content{
+    position:fixed;
+    max-width: inherit;
+    -ms-flex-direction: column;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.maincontainer {
+    flex: 1 1 auto;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    flex-direction: row;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+    align-content: flex-start;
+    -webkit-box-align: start;
+    align-items: flex-start;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+/*.posts{
+    max-width: calc(100% - 498px);
+    order: 2;
+    flex-basis: calc(100% - 498px);
+    margin-left: 24px;
+    margin-right: 24px
+}*/
