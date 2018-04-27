@@ -83,7 +83,11 @@
 }
 
 li{
-    list-style: none
+    list-style: none;
+    border-width: 0 0 0 3px;
+    border-style: solid;
+    padding: 2px 0 2px 4px;
+    border-color: transparent;
 }
 
 ol{
@@ -101,6 +105,10 @@ h3{
     -webkit-margin-after: 5px
 }
 
+.active{
+    font-weight: 700;
+    border-color: grey;
+}
 /*.posts{
     max-width: calc(100% - 498px);
     order: 2;
