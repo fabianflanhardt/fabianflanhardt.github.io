@@ -1,19 +1,27 @@
 <!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+
 <script>
     $( document ).ready(function() {
       // Handler for .ready() called.
     $('#toc').toc({ minimumHeaders: 1, listType: 'ol', showSpeed: 0, headers: '.entry h2, .entry h3, .entry h4' });
-    /* this offset helps account for the space taken up by the floating toolbar. */
+    /* this offset helps account for the space taken up by the floating toolbar. 
     $('#toc').on('click', 'a', function() {
       var target = $(this.getAttribute('href'))
         , scroll_target = target.offset().top
       $(window).scrollTop(scroll_target - 10);
       return false
     })
-      
+    */    
     });
 </script>
-    <h3>Content</h3>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+<h3>Content</h3>
+
 <div id="toc">
   
 </div>
+
+<script src="{{ "/js/toc-highlight.js" }}"></script>
+
