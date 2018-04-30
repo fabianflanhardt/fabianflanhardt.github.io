@@ -5,14 +5,76 @@
 /* The sidebar menu */
 .sidebar-right {
     height: relative; /* Full-height: remove this if you want "auto" height */
-    max-width: 230px; /* Set the width of the sidebar */
+     /* Set the width of the sidebar */
     z-index: 1; /* Stay on top */
     overflow-x: hidden; /* Disable horizontal scroll */
-    float: right;
+    /* float: right; */
     display: block;
-    order: 3;
-    flex-basis: 230px;
-    top: 150px
+    
+    /*  */
+
+}
+@media (min-width: 1795px){
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+        width: 1600px;
+    }
+
+    .maincontainer {
+        margin-left: auto;
+        margin-right: auto;
+        width: 1600px;
+    }
+}
+
+@media (min-width: 1200px){
+    .sidebar-right{
+        order: 3;
+        flex: 1 1 100%;
+        top: 150px;
+        max-width: 230px;
+        flex-basis: 230px;
+    }
+
+    .center-toc{
+        display: none; /* hide center-toc below 1200px window width */
+    }
+    .contentcontainer{
+        max-width: calc(100% - 498px);
+        flex-basis: calc(100% - 498px);
+    }
+}
+
+@media (max-width: 1199.9999px) and (min-width: 768px){
+    .sidebar-right{
+        order: 0;
+        flex: 1 1 100%;
+        /* top: 150px; */
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+    .toc-right{
+        display: none;
+    }
+
+    .contentcontainer{
+        max-width: calc(100% - (498px - 220px));
+        flex-basis: calc(100% - (498px - 220px));
+    }
+}
+
+@media (max-width: 767.99999px){
+    .contentcontainer{
+        flex-basis: 100%;
+    }
+    .toc-right{
+        display: none;
+    }
+    .maincontainer{
+        padding-left: 7px;
+        padding-right: 7px;
+    }
 }
 
 /* The sidebar menu */
@@ -29,17 +91,14 @@
 
 .contentcontainer
 {
-    max-width: calc(100% - 498px);
     order: 2;
-    flex-basis: calc(100% - 498px);
     margin-left: 24px;
     margin-right: 24px
 }
 
-.sidebar-content{
+.toc-right{
     position:fixed;
     max-width: inherit;
-    -ms-flex-direction: column;
 }
 
 /* The navigation menu links */
@@ -68,7 +127,8 @@
 }
 
 .maincontainer {
-    flex: 1 1 auto;
+    flex: 1 1 100%;
+    padding: 5%;
     display: flex;
     -webkit-box-orient: horizontal;
     flex-direction: row;
@@ -78,8 +138,6 @@
     align-content: flex-start;
     -webkit-box-align: start;
     align-items: flex-start;
-    padding-left: 70px;
-    padding-right: 70px;
 }
 
 li{
