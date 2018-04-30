@@ -128,7 +128,8 @@
 
 .maincontainer {
     flex: 1 1 100%;
-    padding: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
     display: flex;
     -webkit-box-orient: horizontal;
     flex-direction: row;
