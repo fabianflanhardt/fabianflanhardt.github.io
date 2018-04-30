@@ -27,21 +27,21 @@ $georgia: Georgia, serif;
 }
 
 // tablet screens
-@mixin tablets {
+@mixin tablet {
   @media screen and (min-width: 768px){
     @content;
   }
 }
 
 // small desktop screens
-@mixin small {
+@mixin smallscreen {
   @media screen and (min-width: 992px){
     @content;
   }
 }
 
 // large devices
-@mixin large {
+@mixin largescreen {
   @media screen and (min-width: 1200px){
     @content;
   }
