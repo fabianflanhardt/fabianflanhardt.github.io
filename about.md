@@ -23,4 +23,4 @@ coming soon.
 
 ### Contact me
 
-[email@domain.com](mailto:fabian.flanhardt@outlook.com)
+[fabian.flanhardt@outlook.com](mailto:fabian.flanhardt@outlook.com)
