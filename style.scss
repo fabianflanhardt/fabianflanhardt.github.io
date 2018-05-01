@@ -32,7 +32,7 @@ body {
   display: flex;
   flex-direction: row;
 
-  @include widescreen{
+  @include widescreen {
     margin-left: auto;
     margin-right: auto;
     width: 1600px;
@@ -47,7 +47,7 @@ body {
   order: 1;  
   top: 150px;
 
-  @include smallscreen{
+  @include smallscreen {
     display: block;
     flex-basis: $leftcontainer-width;
     width: $leftcontainer-width; /* Set the width of the sidebar */
@@ -63,7 +63,7 @@ body {
   display: none; // hide right container on small screens
   order: 3;
 
-  @include largescreen{
+  @include largescreen {
     order: 3;
     display: block;
     top: 150px;
@@ -72,18 +72,18 @@ body {
   }
 }
 
-.contentcontainer{
+.contentcontainer {
   flex-basis: 100%;
   order: 2;
   margin-left: 24px;
   margin-right: 24px;
 
-  @include largescreen{
+  @include largescreen {
     max-width: $contentcontainer-largescreen-width;
     flex-basis: $contentcontainer-largescreen-width;
   }
 
-  @include smallscreen{
+  @include smallscreen {
     max-width: $contentcontainer-smallscreen-width;
     flex-basis: $contentcontainer-smallscreen-width;
   }
