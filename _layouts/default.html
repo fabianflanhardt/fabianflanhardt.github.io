@@ -18,8 +18,10 @@
   </head>
 
   <body>
-    <div class="wrapper-masthead">
-      <div class="container">
+    <div class="wrapper-top">
+    <div class="maincontainer">
+      <div class="leftcontainer"></div>
+      <div class="contentcontainer">
         <header class="masthead clearfix">
           <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
 
@@ -34,10 +36,13 @@
           </nav>
         </header>
       </div>
+      <div class="rightcontainer">
+      </div>
     </div>
+  </div>
 
     
-
+  <div class=wrapper-main>
     <div id="main" role="main" class="maincontainer">
       {% include sidebar-left.html %}
       <div id="maincontent" class="contentcontainer">
@@ -45,12 +50,15 @@
       </div>
       {% include sidebar-right.html %}
     </div>
+  </div>
 
     <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
+      <div class="maincontainer">
+        <footer class="leftcontainer"></footer>
+        <footer class="contentcontainer">
           {% include svg-icons.html %}
         </footer>
+        <footer class="rightcontainer"></footer>
       </div>
     </div>
 

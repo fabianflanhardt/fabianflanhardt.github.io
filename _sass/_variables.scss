@@ -19,6 +19,14 @@ $helvetica: Helvetica, Arial, sans-serif;
 $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;
 
+// Container-width
+$leftcontainer-width: 220px;
+$rightcontainer-width: 230px;
+
+$contentcontainer-largescreen-width: calc(100% - 500px);
+$contentcontainer-smallscreen-width: calc(100% - 280px);
+
+
 // Mobile breakpoints
 @mixin mobile {
   @media screen and (max-width: 480px) {

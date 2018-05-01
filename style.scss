@@ -25,10 +25,68 @@ body {
   flex-direction: column;
 }
 
-.container {
-  margin: 0 auto;
-  padding: 0 5%;
-  width: 100%;
+.maincontainer {
+  flex: 1 1 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  flex-direction: row;
+
+  @include widescreen{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1600px;
+  }
+}
+
+.leftcontainer {
+  height: relative; /* Full-height: remove this if you want "auto" height */
+  z-index: 1; /* Stay on top */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  display: none;
+  order: 1;  
+  top: 150px;
+
+  @include smallscreen{
+    display: block;
+    flex-basis: $leftcontainer-width;
+    width: $leftcontainer-width; /* Set the width of the sidebar */
+  }
+}
+
+/* The sidebar menu */
+.rightcontainer {
+  height: relative; /* Full-height: remove this if you want "auto" height */
+   /* Set the width of the sidebar */
+  z-index: 1; /* Stay on top */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  display: none; // hide right container on small screens
+  order: 3;
+
+  @include largescreen{
+    order: 3;
+    display: block;
+    top: 150px;
+    max-width: $rightcontainer-width;
+    flex-basis: $rightcontainer-width;
+  }
+}
+
+.contentcontainer{
+  flex-basis: 100%;
+  order: 2;
+  margin-left: 24px;
+  margin-right: 24px;
+
+  @include largescreen{
+    max-width: $contentcontainer-largescreen-width;
+    flex-basis: $contentcontainer-largescreen-width;
+  }
+
+  @include smallscreen{
+    max-width: $contentcontainer-smallscreen-width;
+    flex-basis: $contentcontainer-smallscreen-width;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -151,13 +209,13 @@ img {
 // .masthead
 //
 
-.wrapper-masthead {
-  margin-bottom: 50px;
+.wrapper-top > .maincontainer{
+  border-bottom: 1px solid $lightGray;
 }
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  
 
   @include mobile {
     text-align: center;
@@ -241,6 +299,14 @@ img {
 //
 // .main
 //
+
+.center-toc{
+  display: block; /* hide center-toc below 1200px window width */
+
+  @include largescreen{
+    display: none; /* hide center-toc below 1200px window width */
+  }
+}
 
 .posts > .post {
   padding-bottom: 2em;

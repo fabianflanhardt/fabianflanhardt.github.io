@@ -2,99 +2,40 @@
 ---
 
 
-/* The sidebar menu */
-.sidebar-right {
-    height: relative; /* Full-height: remove this if you want "auto" height */
-     /* Set the width of the sidebar */
-    z-index: 1; /* Stay on top */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    /* float: right; */
-    display: block;
-    
-    /*  */
 
-}
-@media (min-width: 1795px){
-    .container{
+
+
+/* @media (min-width: 1795px){ */
+    /* .container{
         margin-left: auto;
         margin-right: auto;
         width: 1600px;
-    }
+    } */
+/* } */
 
-    .maincontainer {
-        margin-left: auto;
-        margin-right: auto;
-        width: 1600px;
-    }
-}
+/* @media (min-width: 1200px){
 
-@media (min-width: 1200px){
-    .sidebar-right{
-        order: 3;
-        flex: 1 1 100%;
-        top: 150px;
-        max-width: 230px;
-        flex-basis: 230px;
-    }
 
-    .center-toc{
-        display: none; /* hide center-toc below 1200px window width */
-    }
-    .contentcontainer{
-        max-width: calc(100% - 498px);
-        flex-basis: calc(100% - 498px);
-    }
+
+
 }
 
 @media (max-width: 1199.9999px) and (min-width: 768px){
-    .sidebar-right{
-        order: 0;
-        flex: 1 1 100%;
-        /* top: 150px; */
-        max-width: 100%;
-        flex-basis: 100%;
-    }
     .toc-right{
         display: none;
     }
 
-    .contentcontainer{
-        max-width: calc(100% - (498px - 220px));
-        flex-basis: calc(100% - (498px - 220px));
-    }
 }
 
 @media (max-width: 767.99999px){
-    .contentcontainer{
-        flex-basis: 100%;
-    }
+
     .toc-right{
         display: none;
     }
-    .maincontainer{
-        padding-left: 7px;
-        padding-right: 7px;
-    }
-}
+} */
 
 /* The sidebar menu */
-.sidebar-left {
-    height: relative; /* Full-height: remove this if you want "auto" height */
-    max-width: 220px; /* Set the width of the sidebar */
-    z-index: 1; /* Stay on top */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    display: block;
-    order: 1;
-    flex-basis: 220px;
-    top: 150px
-}
 
-.contentcontainer
-{
-    order: 2;
-    margin-left: 24px;
-    margin-right: 24px
-}
 
 .toc-right{
     position:fixed;
@@ -124,21 +65,6 @@
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
-}
-
-.maincontainer {
-    flex: 1 1 100%;
-    padding-left: 5%;
-    padding-right: 5%;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    flex-direction: row;
-    flex-wrap: wrap;
-    -webkit-box-pack: center;
-    justify-content: center;
-    align-content: flex-start;
-    -webkit-box-align: start;
-    align-items: flex-start;
 }
 
 li{

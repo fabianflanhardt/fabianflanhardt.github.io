@@ -6,7 +6,7 @@ $(document).ready(function(){
   // Select first item's ID Attribute
   var firsttocid = $($headers[0]).attr('id');
   // select parent item of link in right sidebar, that points to first discovered header
-  var ListNode = $('.sidebar-right [href="#'+ firsttocid +'"]').parent()
+  var ListNode = $('.rightcontainer [href="#'+ firsttocid +'"]').parent()
   ListNode.addClass('active');
 });
 
@@ -47,7 +47,7 @@ $(document).ready(function(){
 
     // This is the bit of code that uses the currentSection as its source of ID
     $('li').removeClass('active');
-    var ListNode = $('.sidebar-right [href="#'+ id +'"]').parent()
+    var ListNode = $('.rightcontainer [href="#'+ id +'"]').parent()
     ListNode.addClass('active');
   });
 });
