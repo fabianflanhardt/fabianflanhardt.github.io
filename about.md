@@ -4,11 +4,13 @@ title: About
 permalink: /about/
 ---
 
+## Something about me
+
 My name is Fabian Flanhardt, I'm living in Germany and I started working in IT in 2007, which was kind of making my hobby my job. I've come along tons of interesting topics since then and never got bored. Instead, my interest for all that great stuff and figuring out how it works is still growing and feels like never coming to an end.
 At the moment, I'm focusing on cloud technologies - most of the time Microsoft Azure - and Citrix Products and also actively participate in the Microsoft communities in Cologne.
 Of course, IT is not my only interest. But it is the one I will most likely be blogging about.
 
-## Why I want to start a blog
+### Why I want to start a blog
 
 Working in IT, reading stuff published to the internet is essential for getting into new things. Life as an IT enthusiast would be unimaginable for me without so many people out there doing a great job in sharing their knowledge. So at first, I want to give something back by participating with my contributions.
 
