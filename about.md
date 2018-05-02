@@ -14,8 +14,7 @@ Working in IT, reading stuff published to the internet is essential for getting 
 
 Second, this will also be some kind of documentation for myself. Writing down things lets you remember far better than just doing, or thinking about things. And once it's stored, you can always come back to look up.
 
-Third - and that's kind of making the second point complete - is collaborating with others.
-Sharing things with others, get to know their views and learning from each other is always doing more than just keeping things and have a limited audience thinking about. So I'm hoping to see good discussions and connect to new people here.
+Third - and that’s kind of making the second point complete - is collaborating with others. Blogging makes it possible to share experience and knowledge with a bigger audience, to get to know other views and to learn from each other. Working alone and keeping things to one's self is limiting, while being a part of an active community is an opportunity for ideas to be born and to evolve. So I'd be excited to have some good discussions and connect to new people here. Happy reading!
 
 ### More Information
 
