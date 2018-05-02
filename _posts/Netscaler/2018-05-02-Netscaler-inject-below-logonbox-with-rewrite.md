@@ -8,25 +8,25 @@ comments: true
 
 ## Enable Rewrite feature
 
-```shell
+``shell
 > enable ns feature REWRITE 
  Done 
 > show ns feature 
-```
+``
 
 ## Inserting text below Logon Button via Rewrite Policy
 
 ### Create Rewrite Action
 
-```shell
+``shell
 add rewrite action rw_act_insert_belowloginbtn insert_after_all "HTTP.RES.BODY(120000).SET_TEXT_MODE(IGNORECASE)" q{"var login_below_btn=$(\"<div style='text-align:center;margin-left:167px;padding-top: 60px;font-size:12px'><a href='https://yourlink.html' target='_blank'>My Link</a></div>\").appendTo(logonbox_logonform);"} -pattern "logonbox_logonform.append(box_view);"
-```
+``
 
 ### Create Rewrite Policy
 
-```shell
+``shell
 add rewrite policy rw_pol_insert_belowloginbtn "HTTP.REQ.URL.CONTAINS(\"gateway_login_view.js\")" rw_act_insert_belowloginbtn
-```
+``
 
 ### Bind Rewrite Policy to your vServer
 
