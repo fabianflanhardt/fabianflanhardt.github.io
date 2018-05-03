@@ -74,18 +74,19 @@ body {
 
 .contentcontainer {
   flex-basis: 100%;
+  max-width: 100%;
   order: 2;
   margin-left: 24px;
   margin-right: 24px;
 
-  @include largescreen {
-    max-width: $contentcontainer-largescreen-width;
-    flex-basis: $contentcontainer-largescreen-width;
-  }
-
   @include smallscreen {
     max-width: $contentcontainer-smallscreen-width;
     flex-basis: $contentcontainer-smallscreen-width;
+  }
+  
+  @include largescreen {
+    max-width: $contentcontainer-largescreen-width;
+    flex-basis: $contentcontainer-largescreen-width;
   }
 }
 
