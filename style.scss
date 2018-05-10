@@ -351,6 +351,20 @@ footer {
   text-align: center;
 }
 
+// #region sidebars
+
+.toc-right{
+  /* position:fixed; */
+  max-width: inherit;
+}
+
+.fixed{
+  position: fixed;
+  top: 0;
+}
+
+// #endregion
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";

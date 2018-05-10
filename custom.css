@@ -37,10 +37,7 @@
 /* The sidebar menu */
 
 
-.toc-right{
-    position:fixed;
-    max-width: inherit;
-}
+
 
 /* The navigation menu links */
 .sidenav a {
