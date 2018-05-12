@@ -19,7 +19,7 @@ html {
 
 body {
 	background: $white;
-  font: 18px/1.4 $helvetica;
+  font: 16px $defaultfont;
   color: $darkGray;
   display: flex;
   flex-direction: column;
@@ -45,7 +45,6 @@ body {
   overflow-x: hidden; /* Disable horizontal scroll */
   display: none;
   order: 1;  
-  top: 150px;
 
   @include smallscreen {
     display: block;
@@ -95,32 +94,32 @@ h1, h2, h3, h4, h5, h6 {
   color: $darkerGray;
   font-weight: bold;
 
-  line-height: 1.7;
-  margin: 1em 0 15px;
+  line-height: 1.4;
+  margin: 1rem 0 0.5rem;
   padding: 0;
 
   @include mobile {
-    line-height: 1.4;
+    line-height: 1.2;
   }
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 28px;
   a {
     color: inherit;
   }
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 22px;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 h4 {
-  font-size: 18px;
+  font-size: 16px;
   color: $gray;
 }
 
@@ -300,6 +299,10 @@ img {
 //
 // .main
 //
+.toc{
+  font-size: 90%;
+  max-width: inherit;
+}
 
 .center-toc{
   display: block; /* hide center-toc below 1200px window width */
