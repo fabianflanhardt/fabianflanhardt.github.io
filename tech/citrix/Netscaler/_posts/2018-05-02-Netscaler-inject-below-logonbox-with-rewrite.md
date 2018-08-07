@@ -11,6 +11,8 @@ might help some of you getting things in place more quickly.
 
 ## Enable Rewrite feature
 
+{% gist 043817b9d4d5f2bc20d88bc62d9d6aa2 %}
+
 ```shell
 > enable ns feature REWRITE
  Done
